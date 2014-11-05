@@ -1,0 +1,11 @@
+.left_panel
+	h2.side_head.fl Contact Me
+	.clearfix
+	.mal
+		= beautify_params 'Address', raw("Hari Krishna. K, <br>Vinayak Nagar, <br>Madhapur, <br>Serilingampally, <br>Hyderabad - 500081")
+		= beautify_params 'Mobile', raw('+91 9885342544 <br>+91 7396980994')
+		= beautify_params 'Website', link_to('harikrishna.heroku.com', 'http://harikrishna.heroku.com', :target => '_blank')
+		= beautify_params 'Email', link_to('harimmd@gmail.com', 'mailto:harimmd@gmail.com')
+.right_panel
+	= render :partial => 'profile_image'
+.clearfix

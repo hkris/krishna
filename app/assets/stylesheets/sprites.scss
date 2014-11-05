@@ -1,0 +1,40 @@
+@import 'mixins';
+
+.social_links {
+	@include fr;
+	@include pt(90px);
+	a {
+		height: 50px !important;
+		line-height: 50px !important;
+		width: 50px !important;
+		@include p(0px !important);
+		@include rad(0px !important);
+		@include db;
+		@include fl;
+	}
+	a.facebook {
+		background: url('facebook.png') no-repeat;
+	}
+
+	a.gmail {
+		background: url('gmail.png') no-repeat;
+	}
+
+	a.twitter {
+		background: url('twitter.png') no-repeat;
+	}
+
+	a.yahoo {
+		background: url('yahoo.png') no-repeat;
+	}
+
+	a.orkut {
+		background: url('orkut.png') no-repeat;
+	}
+}
+
+.msword {
+	background: url('msword.png') no-repeat;
+	width: 50px;
+	height: 50px;
+}

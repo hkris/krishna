@@ -1,0 +1,7 @@
+@import 'mixins';
+
+footer {
+	@include top_bar_bg;
+	@include p(20px);
+	border-top: $gray_border;
+}

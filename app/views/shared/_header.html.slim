@@ -1,0 +1,17 @@
+header
+	.header_link_container
+		.top_decoration
+		.container
+			= link_to '', root_path, :class => 'logo fl'
+			= link_to raw("Home<div class='bar'></div>"), home_path, :class => @home
+			= link_to raw("About<div class='bar'></div>"), about_path, :class => @about
+			= link_to raw("Skills<div class='bar'></div>"), skills_path, :class => @skills
+			= link_to raw("Resume<div class='bar'></div>"), resume_path, :class => @resume
+			= link_to raw("Contact<div class='bar'></div>"), contact_path, :class => @contact
+
+			.social_links
+				= link_to '', 'mailto:harimmd@gmail.com', :class => 'gmail', :target => '_blank'
+				= link_to '', 'http://facebook.com/hkrishna.k', :class => 'facebook', :target => '_blank'
+				= link_to '', 'http://twitter.com/hariKkotta', :class => 'twitter', :target => '_blank'
+				= link_to '', 'http://www.orkut.co.in/Main#Profile?uid=10188659984079564644', :class => 'orkut', :target => '_blank'
+			.clearfix

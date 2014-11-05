@@ -1,0 +1,30 @@
+.left_panel
+	h2.side_head.fl About Me
+	.clearfix
+
+	= beautify_params 'Name', 'Hari Krishna K'
+	= beautify_params 'Home Town', 'Kalyanadurg'
+	= beautify_params 'Current City', 'Hyderabad'
+	= beautify_params 'Languages', 'English, Telugu, Hindi, Kannada, Tamil'
+	br
+	= beautify_params 'Activities', 'Read books, browsing internet'
+	= beautify_params 'Music', 'Enigma, Enya'
+	= beautify_params 'Favorite Movies', 'Troy, Gladiator'
+	= beautify_params 'TV Shows', 'Legend of the Seeker'
+	= beautify_params 'Favorite Books', 'The Secrete by Rhonda Byrne'
+	= beautify_params 'Quotes', 'Do it Before you Die'
+	br
+	= beautify_params 'Website', link_to('harikrishna.heroku.com', 'http://harikrishna.heroku.com', :target => '_blank')
+	br
+	= beautify_params 'Collge/University', 'MBA, Madra University'
+	= beautify_params 'High School', 'SSC, ZPHS Kalyandurg'
+	= beautify_params 'Employer', 'Self Employed'
+	= beautify_params 'Position', 'UI Developer'
+	= beautify_params 'Description', 'Creative, Humorous, Generous'
+	= beautify_params 'City/Town', 'Hyderabad'
+
+
+
+.right_panel
+	= render :partial => 'profile_image'
+.clearfix

@@ -1,0 +1,20 @@
+.left_panel
+	h2.side_head.fl My Skills
+	.clearfix
+	br
+	br
+	h3 Designing Skills
+	.mal
+		= beautify_params 'Photoshop', progress_bar(70, 7), 200
+
+	h3 Programing Skills
+	.mal
+		= beautify_params 'HTML', progress_bar(100, 10), 200
+		= beautify_params 'CSS', progress_bar(80, 8), 200
+		= beautify_params 'SASS/SCSS', progress_bar(70, 7), 200
+		= beautify_params 'ERB/SLIM', progress_bar(100, 10), 200
+		= beautify_params 'Ruby On Rails', progress_bar(50, 5), 200
+
+.right_panel
+	= render :partial => 'profile_image'
+.clearfix

@@ -1,0 +1,52 @@
+@import 'mixins';
+
+@mixin top_decoration_height {
+	height: 7px;
+}
+
+header {
+	.top_decoration {
+		width: 100%;
+		background: $orange;
+		@include top_decoration_height;
+	}
+	.header_link_container {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		@include top_bar_bg;
+		height: 150px;
+		border-bottom: $gray_border;
+
+		.logo {
+			@include m(45px 20px 0px 0px);
+		}
+
+		a {
+			@include relative;
+			font-size: 15px;
+			@include p(40px 15px 0px 15px);
+			@include fb;
+			@include db;
+			@include fl;
+			height: 60px;
+			line-height: 80px;
+			@include ts(0px 0px 2px #000);
+			@include rad(0px 0px 10px 10px);
+			&.active {
+				background: url('header_link_hover.png') repeat-x bottom;
+				border-bottom: 5px solid rgba(255, 107, 0, 0.5);
+				color: #FFF;
+				.bar {
+					height: 10px;
+				@include absolute;
+					top: -7px;
+					left: 0px;
+					@include top_bar_bg;
+					width: 100%;
+				}
+			}
+		}
+
+	}
+}

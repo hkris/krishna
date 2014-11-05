@@ -1,0 +1,16 @@
+.left_panel
+	h2.side_head.fl Resume
+	.clearfix
+	br
+	br
+	p You can download my resume by clicking the link below.
+	br
+	.invi_btn.large
+		= link_to '', 'https://docs.google.com/document/d/1r65uH7QKoeFbRrMMRTb6U3I1yxJk8nKNnwTph8lzDqs', :target => 'blank', :class => 'msword fl'
+		.fl.mlm= link_to 'Click here to download the resume.', 'https://docs.google.com/document/d/1r65uH7QKoeFbRrMMRTb6U3I1yxJk8nKNnwTph8lzDqs/edit', :target => 'blank'
+		.clearfix
+	.clearfix
+
+.right_panel
+	= render :partial => 'profile_image'
+.clearfix
